@@ -1,8 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { MessageSquare, ArrowRight, ShieldCheck, Zap, Award, MapPin, CheckCircle2, Wrench } from 'lucide-react';
+import { MessageSquare, ArrowRight, ShieldCheck, Award, MapPin, CheckCircle2, Wrench } from 'lucide-react';
 import { SITE_CONFIG } from '../config/siteConfig';
-import { PRODUCTS, CATEGORIES } from '../data/products';
+import { PRODUCTS } from '../data/products';
 import { ProductCard } from '../components/ProductCard';
 import { TrustBadges } from '../components/TrustBadges';
 import { generateGeneralWhatsAppLink } from '../utils/whatsapp';
@@ -146,47 +146,6 @@ export const Home: React.FC = () => {
       {/* Trust Badges Bar (Quality & Assurance) */}
       <TrustBadges />
 
-      {/* Machinery Categories Quick Nav */}
-      <section className="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8">
-        <div className="flex flex-col sm:flex-row sm:items-end justify-between mb-4 sm:mb-6">
-          <div>
-            <span className="text-amber-700 text-[10px] sm:text-xs font-bold uppercase tracking-wider bg-amber-100 px-2.5 py-0.5 rounded-full border border-amber-200">Browse Range</span>
-            <h2 className="text-lg sm:text-2xl font-extrabold text-slate-900 mt-1">
-              Explore Our Machine Categories
-            </h2>
-          </div>
-          <Link to="/products" className="text-amber-700 hover:underline text-xs sm:text-sm font-bold flex items-center gap-1 mt-1 sm:mt-0">
-            <span>View Full Catalogue</span>
-            <ArrowRight className="w-3.5 h-3.5" />
-          </Link>
-        </div>
-
-        <div className="grid grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-6">
-          {CATEGORIES.map((category) => (
-            <Link
-              key={category.id}
-              to={`/products?category=${category.id}`}
-              className="group bg-white p-3 sm:p-6 rounded-xl sm:rounded-2xl border border-slate-200 hover:border-amber-400 shadow-sm hover:shadow-md transition-all duration-300 flex flex-col justify-between"
-            >
-              <div>
-                <div className="w-8 h-8 sm:w-12 sm:h-12 bg-amber-50 border border-amber-200 rounded-lg sm:rounded-xl flex items-center justify-center mb-2 sm:mb-3 group-hover:bg-amber-500 group-hover:text-slate-950 transition-colors">
-                  <Zap className="w-4 h-4 sm:w-6 sm:h-6 text-amber-600 group-hover:text-slate-950" />
-                </div>
-                <h3 className="text-xs sm:text-lg font-bold text-slate-900 group-hover:text-amber-700 transition-colors leading-tight">
-                  {category.name}
-                </h3>
-                <p className="text-[10px] sm:text-xs text-slate-600 mt-1 leading-tight sm:leading-relaxed line-clamp-2 sm:line-clamp-none">
-                  {category.description}
-                </p>
-              </div>
-              <div className="mt-2.5 sm:mt-4 pt-2 sm:pt-3 border-t border-slate-100 flex items-center justify-between text-[10px] sm:text-xs font-bold text-amber-700">
-                <span>View Models</span>
-                <ArrowRight className="w-3 h-3 sm:w-3.5 sm:h-3.5 group-hover:translate-x-1 transition-transform" />
-              </div>
-            </Link>
-          ))}
-        </div>
-      </section>
 
       {/* Store Advantage Feature Box */}
       <section className="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8">
