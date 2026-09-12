@@ -5,8 +5,8 @@ export const TrustBadges: React.FC = () => {
   const trustItems = [
     {
       icon: Clock,
-      title: "40+ Years Legacy",
-      subtitle: "Serving Bhiwani & Haryana since 1980 with trust and integrity."
+      title: "50+ Years Legacy",
+      subtitle: "Serving Bhiwani & Haryana since 1976 with trust and integrity."
     },
     {
       icon: ShieldCheck,
@@ -44,8 +44,8 @@ export const TrustBadges: React.FC = () => {
           {trustItems.map((item, index) => {
             const Icon = item.icon;
             return (
-              <div 
-                key={index} 
+              <div
+                key={index}
                 className="bg-white p-3.5 sm:p-6 rounded-xl sm:rounded-2xl border border-slate-200/90 hover:border-amber-400 shadow-sm transition-all group"
               >
                 <div className="w-8 h-8 sm:w-12 sm:h-12 bg-amber-100 text-amber-700 rounded-lg sm:rounded-xl flex items-center justify-center mb-2.5 group-hover:scale-105 transition-transform border border-amber-200">

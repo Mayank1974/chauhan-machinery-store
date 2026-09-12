@@ -49,7 +49,7 @@ export const Navbar: React.FC = () => {
       {/* Main Navigation Bar - Compact height */}
       <div className="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-14 sm:h-18">
-          
+
           {/* Logo Area - Compact on Mobile */}
           <Link to="/" className="flex items-center gap-2.5 group">
             <div className="w-8 h-8 sm:w-10 sm:h-10 bg-amber-50 border-2 border-amber-500 rounded-lg sm:rounded-xl flex items-center justify-center shadow-sm group-hover:scale-105 transition-transform">
@@ -57,7 +57,7 @@ export const Navbar: React.FC = () => {
             </div>
             <div>
               <div className="text-sm sm:text-lg font-extrabold tracking-tight text-slate-900 leading-tight group-hover:text-amber-600 transition-colors">
-                CHAUHAN <span className="text-amber-600">MACHINERY</span>
+                CHAUHAN <span className="text-amber-600">MACHINERY STORE</span>
               </div>
               <p className="text-[9px] sm:text-[10px] font-bold text-slate-500 uppercase tracking-wider leading-none mt-0.5">
                 Naya Bazar, Bhiwani
@@ -71,11 +71,10 @@ export const Navbar: React.FC = () => {
               <Link
                 key={link.path}
                 to={link.path}
-                className={`px-3.5 py-1.5 rounded-lg text-xs font-bold transition-all ${
-                  isActive(link.path)
+                className={`px-3.5 py-1.5 rounded-lg text-xs font-bold transition-all ${isActive(link.path)
                     ? 'bg-amber-50 text-amber-700 border border-amber-200'
                     : 'text-slate-700 hover:text-slate-900 hover:bg-slate-100'
-                }`}
+                  }`}
               >
                 {link.name}
               </Link>
@@ -127,11 +126,10 @@ export const Navbar: React.FC = () => {
                 key={link.path}
                 to={link.path}
                 onClick={() => setMobileMenuOpen(false)}
-                className={`block px-3 py-2.5 rounded-lg text-sm font-bold transition-colors ${
-                  isActive(link.path)
+                className={`block px-3 py-2.5 rounded-lg text-sm font-bold transition-colors ${isActive(link.path)
                     ? 'bg-amber-50 text-amber-700 border-l-4 border-amber-600'
                     : 'text-slate-800 hover:bg-slate-100'
-                }`}
+                  }`}
               >
                 {link.name}
               </Link>

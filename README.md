@@ -49,9 +49,9 @@ All contact details, store address, phone numbers, email, and Google Maps links 
 ```typescript
 export const SITE_CONFIG = {
   businessName: "Chauhan Machinery Store",
-  whatsappNumber: "+919812012345", // <-- Change your WhatsApp number here
-  whatsappDisplayNumber: "+91 98120 12345",
-  phoneNumber: "+91 98120 12345",
+  whatsappNumber: "+919416126918", // <-- Change your WhatsApp number here
+  whatsappDisplayNumber: "+91 94161 26918",
+  phoneNumber: "+91 94161 26918",
   email: "chauhanmachinery.bhiwani@gmail.com",
   // ...
 };

@@ -48,7 +48,7 @@ export const Contact: React.FC = () => {
 
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 space-y-14">
-      <SEOHead 
+      <SEOHead
         title="Contact Us & Store Location Bhiwani"
         description="Contact Chauhan Machinery Store in Naya Bazar, Bhiwani, Haryana. Get instant price list and machine details on WhatsApp or phone call."
       />
@@ -89,7 +89,7 @@ export const Contact: React.FC = () => {
 
       {/* Main Grid: Form + Contact Info */}
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-10">
-        
+
         {/* Left Column: WhatsApp Form */}
         <div className="lg:col-span-7 bg-white rounded-3xl border border-slate-200 p-6 sm:p-8 shadow-sm space-y-6">
           <div>
@@ -106,7 +106,7 @@ export const Contact: React.FC = () => {
               <input
                 type="text"
                 required
-                placeholder="e.g. Ramesh Kumar"
+                placeholder="e.g. Mayank Chauhan"
                 value={formData.name}
                 onChange={(e) => setFormData({ ...formData, name: e.target.value })}
                 className="w-full bg-slate-50 border border-slate-300 text-slate-900 placeholder-slate-400 rounded-xl px-4 py-3 focus:outline-none focus:border-amber-600 text-sm"
@@ -164,10 +164,10 @@ export const Contact: React.FC = () => {
 
         {/* Right Column: Contact Details Cards */}
         <div className="lg:col-span-5 space-y-6">
-          
+
           <div className="bg-white rounded-3xl border border-slate-200 p-6 space-y-4 shadow-sm">
             <h3 className="text-lg font-bold text-slate-900 border-b border-slate-200 pb-3">Store Contact Information</h3>
-            
+
             <div className="space-y-4 text-xs sm:text-sm">
               <div className="flex items-start gap-3">
                 <div className="w-9 h-9 bg-amber-50 border border-amber-200 rounded-lg flex items-center justify-center shrink-0 text-amber-700">
@@ -189,7 +189,6 @@ export const Contact: React.FC = () => {
                   <a href={`tel:${SITE_CONFIG.phoneNumber}`} className="text-amber-700 font-bold hover:underline block">
                     {SITE_CONFIG.phoneNumber}
                   </a>
-                  <span className="text-slate-500 text-xs">Alt: {SITE_CONFIG.alternatePhone}</span>
                 </div>
               </div>
 
